@@ -1,0 +1,7 @@
+# Example .gitignore file for your config dir
+*
+!config
+!*.yaml
+!.gitignore
+config/secrets.yaml
+config/known_devices.yaml
