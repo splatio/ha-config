@@ -2,6 +2,7 @@
 *
 !config
 !*.yaml
+!*.yml
 !.gitignore
 config/secrets.yaml
 config/known_devices.yaml
