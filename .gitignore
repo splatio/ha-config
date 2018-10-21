@@ -1,8 +1,9 @@
 # Example .gitignore file for your config dir
 *
-!config
+!.gitignore
 !*.yaml
 !*.yml
-!.gitignore
+!config
+!mosquitto/config
 config/secrets.yaml
 config/known_devices.yaml

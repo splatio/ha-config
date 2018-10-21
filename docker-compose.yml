@@ -9,3 +9,17 @@ services:
       - /etc/letsencrypt:/etc/letsencrypt
     restart: always
     network_mode: host
+  mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto
+    volumes:
+      - /home/matt/hass/mosquitto/config:/mosquitto/config
+      - /home/matt/hass/mosquitto/data:/mosquitto/data
+      - /home/matt/hass/mosquitto/log:/mosquitto/log
+      - /etc/mosquitto/certs:/mosquitto/certs
+      - /etc/mosquitto/auth:/mosquitto/auth
+    ports:
+      - 1883:1883
+      - 8883:8883
+      - 9001:9001
+    restart: always
